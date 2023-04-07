@@ -1,0 +1,35 @@
+.nav {
+  align-items: center;
+  padding-right: 16px;
+
+  &__list {
+    align-items: center;
+    margin-right: var(--offset);
+    gap: 51px;
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: var(--main-size);
+    font-weight: 400;
+    color: var(--light-color);
+    transition: color 0.3s ease-in-out;
+
+    @include hover {
+      color: var(--accent-color);
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      color: var(--active-color);
+    }
+  }
+}
+
+.nav__link.focus-visible {
+  outline: 1px solid var(--active-color);
+  outline-offset: 3px;
+}

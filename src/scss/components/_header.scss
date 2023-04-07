@@ -1,0 +1,16 @@
+.header {
+  padding: 17px 0;
+
+  &__container {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &--position {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+}
