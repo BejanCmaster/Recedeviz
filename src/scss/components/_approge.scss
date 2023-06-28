@@ -1,0 +1,90 @@
+.approge__top {
+  padding: 80px;
+  background-color: #f7f8f8;
+}
+.approge__left {
+  padding-top: 33px;
+  grid-column: 5 span;
+}
+.approge__title {
+  margin: 0;
+  margin-bottom: 13px;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 400;
+  color: var(--dark-color);
+}
+.approge__descr {
+  margin: 0;
+  margin-bottom: 37px;
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+.approge__btn {
+  padding: 16px 34px;
+  color: #00413e;
+  border: 1px solid rgba(53, 83, 98, 0.20);
+}
+.approge__right {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  grid-column: 7 / 6 span;
+  gap: 8px;
+}
+.approge__bottom {
+  padding: 24px 0;
+  background-color: var(--light-color);
+}
+.approge__item {
+  grid-column: 2 span;
+}
+.approge__link {
+    display: block;
+    border-top: 1px solid rgba(53, 83, 98, 0.30);
+    padding-top: 17px;
+    padding-left: 32px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--text-color);
+    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    background-position: left top 15px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+.approge__link:focus {
+    outline: none;
+  }
+.approge__link:hover {
+  @include hover;
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.approge__link:active {
+  color: var(--active-color);
+  border-color: var(--active-color);
+}
+.approge__link--ted {
+  background-image: url("../img/approge/approge-icon-1.png");
+}
+.approge__link--nyt {
+  background-image: url("../img/approge/approge-icon-2.png");
+}
+.approge__link--state {
+  background-image: url("../img/approge/approge-icon-3.png");
+}
+.approge__link--press {
+  background-image: url("../img/approge/approge-icon-4.png");
+}
+.approge__link--time {
+  background-image: url("../img/approge/approge-icon-5.png");
+}
+.approge__link--free {
+  background-image: url("../img/approge/approge-icon-6.png");
+}
+.approge__link.focus-visible {
+  border-color: var(--active-color);
+}
